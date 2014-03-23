@@ -76,7 +76,7 @@ Find an example script [here](/examples/Importing%20GeoJSON%20Python%20Demo.py '
 
 2. Open GeoJSON data file.
 	```python
-	bikeroutes_json = open('PATH/TO/osd-street-center-line/data/Bikeroutes.json', 'r')
+	bikeroutes = open('PATH/TO/osd-street-center-line/data/Bikeroutes.json', 'r')
 	```
 
 3. Check first few lines of data (repeat this command several times)
@@ -86,12 +86,13 @@ Find an example script [here](/examples/Importing%20GeoJSON%20Python%20Demo.py '
 
 4. Load GeoJSON file.
 	```python
-	bikeroutes = json.load(bikeroutes_json)
+	bikeroutes_json = json.load(bikeroutes)
 	```
 
 5. Close the open GeoJSON file.
 	```python
 	json.close(bikeroutes_json)
+	close(bikeroutes)
 	```
 
 Ruby
